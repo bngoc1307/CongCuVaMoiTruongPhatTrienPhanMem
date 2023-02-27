@@ -5,6 +5,9 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import ProductPage from './pages/ProductPage';
 import Login from './pages/Login';
+import SumTwoInteger from './pages/SumTwoInteger';
+import SolveQuadraticEquation from './pages/SolveQuadraticEquation';
+import SubtractTwoInteger from './pages/SubtractTwoInteger';
 
 function App() {
   return (
@@ -24,6 +27,15 @@ function App() {
 				<li>
 					<Link to='/login'>Login</Link>
 				</li>
+				<li>
+					<Link to='/sumtwointeger'>Sum</Link>
+				</li>
+				<li>
+					<Link to='/subtracttwointeger'>Subtract</Link>
+				</li>
+				<li>
+					<Link to='/solvequadraticequation'>Solve Quadratic Equation</Link>
+				</li>
 			</ul>
 		</nav>
 		<Routes>
@@ -31,6 +43,9 @@ function App() {
 			<Route path='/contact' element={<Contact />} />
 			<Route path='/product' element={<ProductPage />} />
 			<Route path='/login' element={<Login />} />
+			<Route path='/sumtwointeger' element={<SumTwoInteger />} />
+			<Route path='/subtracttwointeger' element={<SubtractTwoInteger />} />
+			<Route path='/solvequadraticequation' element={<SolveQuadraticEquation />} />
 		</Routes>
 	</div>
   	</>
